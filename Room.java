@@ -12,6 +12,11 @@ public class Room {
         this.isAvailable = isAvailable;
     }
 
+    // Calculate Room Charge for given number of nights
+    public double calculateRoomCharge(int nights) {
+        return pricePerNight * nights;
+    }
+
     // Getters
     public int getRoomNumber() {
         return roomNumber;
